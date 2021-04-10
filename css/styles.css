@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   project 2
+   
+   Author: Dylan Chohan
+   Date: March 22, 2021
+   
+   Filename: styles.css
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+/* =================
+   MAIN STYLES
+   =================
+*/
+
+html{
+    font-family: "Open Sans", sans-serif;
+}
+
+p{
+    font-size: large;
+}
+
+
+/*  ===================
+    MOBILE STYLES
+    ===================
+*/
+
+@media only screen and (max-width: 480px){
+    nav{
+        display: flexbox;
+        flex-flow: column;
+        text-align: center;
+    }
+
+    div.container div{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    body{
+        text-align: center;
+    }
+
+    div img{
+        width: 100%;
+    }
+
+    footer h5{
+        float: left;
+    }
+    
+    footer h6{
+        float: right;
+    }
+}
+
+/*  ===================
+    TABLET STYLES
+    ===================
+*/
+
+@media only screen and (min-width: 481px){
+    h2{
+        text-align: center;
+    }
+
+    div h3{
+        text-align: center;
+    }
+
+    nav div{
+        text-align: center;
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section.head p{
+        width: 50%;
+        float: left;
+    }
+
+    div.sections{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 10px;
+        margin-right: 10px
+    }
+
+    div.sections div{
+        max-width: 50%;
+        text-align: center;
+        margin-left: auto;
+    }
+    
+    section.head img{
+        width: 50%;
+    }
+    
+    body div img{
+        width: 95%;
+    }
+
+    div p{
+        width: 100%;
+        margin-left: 5px;
+        margin-right: 5px;
+        
+    }
+
+    header{
+        text-align: center;
+    }
+
+    #Contact{
+        text-align: center;
+    }
+
+    footer h5{
+        float: left;
+    }
+
+    footer h6{
+        float: right;
+    }
+}
+
+
+/*  ===================
+    DESKTOP STYLES
+    ===================
+*/
+
+@media only screen and (min-width: 769px){
+    h2{
+        text-align: center;
+    }
+
+    div h3{
+        text-align: center;
+    }
+
+    nav div{
+        float: right;
+        text-align: center;
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section.head p{
+        width: 50%;
+        float: left;
+    }
+
+    div.sections{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 10px;
+        margin-right: 10px
+    }
+
+    div.sections div{
+        max-width: 33%;
+        text-align: center;
+        margin-left: auto;
+    }
+    
+    section.head img{
+        width: 50%;
+    }
+    
+    body div img{
+        width: 95%;
+    }
+
+    div p{
+        width: 100%;
+        margin-left: 5px;
+        margin-right: 5px;
+        
+    }
+
+    header{
+        float: left;
+        text-align: center;
+    }
+
+    #Contact{
+        text-align: center;
+    }
+
+    footer h5{
+        float: left;
+    }
+
+    footer h6{
+        float: right;
+    }
+}
